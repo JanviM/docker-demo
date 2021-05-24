@@ -5,3 +5,12 @@ services:
 scripts:
   - docker build -t janvim/docker-demo .
   - docker images janvim/docker-demo
+
+before_deploy:
+  - docker login -u janvim -p janvi0210
+
+deploy:
+  provider:script
+  script: docker push janvim/docker-demo
+  on:
+    branch: master
