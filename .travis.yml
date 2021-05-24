@@ -2,5 +2,5 @@ sudo: required
 services:
   - docker
 scripts:
-  - docker build -t janvim/docker_demo .
-  - docker images janvim/docker_demo
+  - docker build -t janvim/docker-demo .
+  - docker images janvim/docker-demo
