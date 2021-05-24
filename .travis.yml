@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+scripts:
+  - docker build -t janvim/node_demo .
+  - docker images janvim/node_demo
